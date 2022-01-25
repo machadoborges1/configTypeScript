@@ -1,0 +1,18 @@
+yarn init -y
+
+yarn add typescript -d
+
+yarn add express
+
+yarn add -D @types/express          //vai ligar a inteligencia do vs code no auto-complite
+
+
+
+yarn tsc src/index.ts    // vai dar um erro então temos que criar um arquivo config.ts
+  yarn tsc --init
+  - com esse arquivo criado podemos usar apelas
+  yarn tsc
+
+fui no arquivo tsconfig.json e descomentei a linha outDir --- troquei o local para './dist', dessa forma os
+arquivos gerados irão para esse diretório não ficarão no mesmo que o src.
+
